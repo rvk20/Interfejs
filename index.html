@@ -8,10 +8,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interfejs</title>
 </head>
 <body>
-    
+    <input type="text" onkeyup="search()" id="searchInput" placeholder="Search for last name..">
     <form class="add-user" id="add-user">
     <div class="Row">
     <div class="Column">
@@ -57,7 +57,7 @@
     </form>
 
     
-    <table class="table table-striped">
+    <table class="table table-striped" id="table">
         <thead>
           <tr>
             <th scope="col">First name</th>
@@ -78,17 +78,8 @@
     </form>
         
       <script src="api.js"></script>
+      <script src="search.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
-      <style>
-        .Row {
-        display: table;
-        width: 100%; /*Optional*/
-        table-layout: fixed; /*Optional*/
-        border-spacing: 10px; /*Optional*/
-        }
-        .Column {
-        display: table-cell;
-        }
-      </style>
+      <link rel="stylesheet" type="text/css" href="style.css">
       </body>
 </html>
